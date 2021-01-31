@@ -23,10 +23,10 @@ Simple script for cipher your message using RSA
 ```python3 CryptoMessages.py -k keys -b 2048```
 
 **Cipher message**
-```python3 CryptoMessages.py -k keys.public -em "Text to cipher"```
+```python3 CryptoMessages.py -k keys.public -em "<Text to cipher>"```
 
 **Decipher message**
-```python3 CryptoMessages.py -k keys.private -dm H5z905LGM+TwhcQoxw57XV6N+ek0H6DTXx4MOb5wqEnTLOZ0tW9/3o0TGbbuAT7/Zp+hnHfPb7GYIQlVM2Q2P5Q1zJvnpzYoj3x7O9MD9o6Q+6vX8tLAGn8mbqjsql2w1an30iQIkd3pal5XA7QNaxU4os8QekLDL0eiZA6bDoaHXeXV+PM3dfEoJ9ashXcyoUsOiF541X6CGXiaMxv5u19q4TncZKdKOrvEugrz5JLeZvesx+xBnZoxidQZC7NwPMZmBAnbfZeIw6Kpk/qXDvmSoREM3Z+LqM0DoHfHJ6Mz9r5hMkcH+yjwxlz9f5/f0dnHPWDoJv5JbcyfjoCneA==```
+```python3 CryptoMessages.py -k keys.private -dm <cipher text>```
 
 **Cipher file**
 ```python3 CryptoMessages.py -k keys.public -ef <file path>```
