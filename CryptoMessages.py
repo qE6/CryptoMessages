@@ -73,10 +73,6 @@ def main():
     parser.add_argument('-df', type=str, help='File to decipher', required=False) # file to decipher
     ns = parser.parse_args()
 
-    if os.path.exists(ns.k) == False:
-        print("Key file not found!")
-        exit(0)
-
     if ns.b:
         # generate key
         if ns.b in [1024,2048,4096]:
@@ -85,6 +81,10 @@ def main():
             exit(0)
 
         print("Please use -b <1024|2048|4096>")
+        exit(0)
+
+    if os.path.exists(ns.k) == False:
+        print("Key file not found!")
         exit(0)
 
     if ns.em:
